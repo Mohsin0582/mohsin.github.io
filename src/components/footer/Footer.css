@@ -1,0 +1,9 @@
+.footer {
+  @apply flex flex-row justify-center items-center w-full py-3 bg-[#2e2e2e];
+  @apply md:py-5;
+}
+
+.footer span {
+  @apply text-[#f8edc8] font-medium text-sm;
+  @apply md:text-base;
+}

@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #f8edc8;
+  --ligh-grey-color: #eaeaea;
+  --greyish-black-color: #2e2e2e;
+  /* --black-color: #120c08; */
+  --black-color: #272727;
+  --black-color-hover: #000000;
+  --navbar-height: 72px;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  place-items: unset !important;
+  font-family: 'Montserrat', sans-serif;
+  /* @apply overflow-hidden; */
+}
+
+#root {
+  @apply w-full;
+}
+
+section {
+  @apply p-5;
+  @apply sm:p-0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+label {
+  @apply block mb-2 text-sm font-semibold text-gray-900;
+  @apply dark:text-white;
+}
+
+input,
+textarea {
+  @apply w-full text-lg px-3 py-1.5;
+}
+
+input {
+  @apply flex mb-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full;
+  @apply dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white;
+}
+
+input[type='email'] {
+  @apply lowercase;
+}
+
+textarea {
+  @apply resize-none first-letter:uppercase flex w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500;
+  @apply dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.web-bg {
+  @apply w-full relative;
+}
+
+.bg-one {
+  @apply bg-[#eaeaea]/20;
+}
+
+.bg-two {
+  @apply bg-[#ffdc80]/20;
+}
+
+.main-wrap {
+  @apply h-[calc(100vh-var(--navbar-height))];
+}
+
+.social-media-icons-wrap {
+  @apply sm:h-[calc(100vh-var(--navbar-height))];
+}

@@ -1,0 +1,57 @@
+.contact-wrapper {
+  @apply fixed top-0 right-0 h-screen w-[270px] bg-white shadow-lg p-3 z-10 overflow-hidden;
+}
+
+.contact {
+  @apply h-full w-full;
+}
+
+.contact .close {
+  @apply inline-flex flex-row flex-wrap justify-between w-full;
+}
+
+.contact .close button {
+  @apply bg-transparent hover:bg-transparent border-0 p-0 m-0;
+  @apply focus:bg-transparent focus:outline-none;
+}
+
+.contact .close svg {
+  @apply text-3xl cursor-pointer text-[var(--dark-color)] hover:text-[var(--black-color-hover)];
+}
+
+.qr-vcard {
+  @apply flex;
+}
+
+.qr-vcard img {
+  @apply w-24;
+}
+
+.qr-vcard img {
+  @apply bg-gray-400 text-gray-400;
+}
+
+.email-client {
+  @apply bg-gray-50 border border-gray-300 rounded-lg p-2 pl-4 my-8;
+}
+
+.email-client a {
+  @apply flex flex-row flex-wrap w-full items-center text-gray-400 hover:text-gray-500;
+}
+
+.email-client svg {
+  @apply w-5 h-auto;
+}
+
+.email-client span {
+  @apply text-sm ml-3 font-medium;
+}
+
+.contact [type='submit'] {
+  @apply mt-8 flex flex-wrap justify-center w-full cursor-pointer border-0 text-[var(--primary-color)] bg-[var(--black-color)] hover:bg-[var(--black-color-hover)] font-medium rounded-lg text-base px-5 py-3 mb-2;
+  @apply dark:bg-blue-600 dark:hover:bg-blue-700;
+}
+
+input#name {
+  @apply capitalize;
+}

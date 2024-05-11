@@ -1,0 +1,14 @@
+.work-wrapper {
+}
+
+.work {
+  @apply h-screen flex-row flex-wrap justify-center items-center;
+}
+
+.projects {
+  @apply w-full grid grid-cols-3 gap-4;
+}
+
+/* .project-card {
+  @apply flex flex-row flex-wrap;
+} */

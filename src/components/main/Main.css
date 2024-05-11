@@ -1,0 +1,91 @@
+.main-wrap {
+  @apply relative;
+}
+
+.social-media-icons-wrap {
+  @apply inline-flex flex-row justify-center items-center w-full;
+  @apply sm:absolute sm:top-0 sm:h-full sm:flex sm:flex-col sm:justify-center sm:w-auto;
+}
+
+.social-media-icons a {
+  @apply inline-flex;
+  @apply sm:flex;
+}
+
+.content-wrap,
+.content {
+  @apply h-full;
+}
+
+.content,
+.content-img,
+.content-text {
+  @apply w-full flex flex-col justify-center items-center;
+}
+
+.content-text {
+  padding: 0;
+}
+
+.content-img {
+  @apply relative;
+}
+
+.content-img-wrap img {
+  @apply mb-4 w-[285px];
+  @apply sm:mb-1 sm:w-[51%];
+}
+
+.content-img a {
+  @apply absolute right-[22px] top-[24px];
+  @apply sm:right-[28.2%] sm:top-[26px] md:top-[27px];
+  @apply md:top-[27px];
+}
+
+.content-img svg {
+  @apply text-[#1ad03f] text-[28px];
+  @apply sm:text-[32px];
+  @apply md:text-4xl;
+  animation: whatsapp 1s ease-out infinite alternate;
+  -webkit-animation: whatsapp 1s ease-out infinite alternate;
+}
+
+@keyframes whatsapp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.heading {
+  font-family: 'Teko', sans-serif;
+  @apply text-[42px] sm:text-6xl md:text-7xl font-bold text-[var(--black-color)] leading-9 sm:leading-tight capitalize;
+}
+
+.sub-heading {
+  @apply text-[24px] sm:text-3xl md:text-4xl font-bold text-[#49564b];
+}
+
+.normal-bold-text {
+  @apply text-xs md:text-base md:leading-normal font-bold text-[#49564b];
+}
+
+.social-media-icons svg {
+  @apply text-[#49564b] text-4xl;
+}
+
+.social-media-icons a:not(:last-child) svg {
+  @apply mr-2;
+  @apply sm:mb-4;
+}
+
+.content-img a:hover,
+.social-media-icons a:hover {
+  @apply opacity-70;
+}
+
+.landing-bottom-spacing {
+  @apply h-10;
+}

@@ -1,0 +1,222 @@
+.v-card {
+  @apply relative w-full h-full flex flex-row flex-wrap;
+  @apply sm:inline-flex sm:overflow-hidden sm:flex-nowrap;
+}
+
+.v-card-left-side,
+.v-card-right-side {
+  @apply w-full h-full flex flex-row flex-wrap;
+  @apply sm:flex-col sm:flex-nowrap;
+}
+
+/* .v-card {
+  @apply relative w-full h-full flex flex-wrap flex-row;
+  @apply sm:inline-flex;
+} */
+
+/* .v-card-left-side,
+.v-card-right-side {
+  @apply w-full h-full flex flex-row flex-wrap basis-full;
+  @apply sm:flex-col sm:basis-1/2;
+}*/
+
+/* .v-card-left-side {
+  @apply items-center relative overflow-hidden;
+  @apply sm:sticky sm:top-0 sm:left-0;
+} */
+
+.v-card-left-side .img-resizer {
+  @apply relative w-[70%] p-0 overflow-hidden;
+  @apply sm:w-full sm:pt-[100vh];
+}
+
+.v-card-left-side img {
+  @apply relative h-full w-[96%] object-cover object-left-top;
+  @apply sm:absolute sm:top-0 sm:left-0;
+}
+
+.about-spacing {
+  @apply my-10;
+  @apply sm:my-12;
+  @apply md:my-16;
+  @apply lg:my-24;
+}
+
+.intro {
+  @apply w-full h-full flex flex-col;
+}
+
+.intro p,
+.intro h1,
+.intro span {
+  @apply font-semibold;
+}
+
+.intro p,
+.intro h1 {
+  @apply text-[var(--black-color)];
+}
+
+.intro span {
+  @apply text-[#49564b] text-4xl ml-0;
+  @apply sm:text-5xl sm:ml-8;
+  @apply md:text-6xl;
+}
+
+.intro p {
+  @apply text-lg mb-2 font-semibold;
+  @apply sm:text-xl sm:mb-4;
+  @apply md:text-2xl;
+}
+
+.intro h1 {
+  @apply text-5xl;
+  @apply sm:text-6xl;
+  @apply md:text-7xl;
+  @apply lg:text-8xl;
+
+  @media (min-width: 640px) {
+    line-height: 50px;
+  }
+
+  @media (min-width: 768px) {
+    line-height: 70px;
+  }
+}
+
+.field {
+  @apply mt-5;
+  @apply sm:mt-10;
+}
+
+.line {
+  @apply w-full bg-[#808080] h-[1px] dark:bg-gray-700;
+}
+
+.about-heading {
+  font-family: 'Montserrat', sans-serif;
+  @apply w-full text-4xl font-semibold capitalize mb-6;
+  @apply sm:mb-12 sm:text-5xl;
+}
+
+.about-heading span {
+  @apply font-bold;
+}
+
+.skills {
+  @apply flex flex-row flex-wrap w-full h-full;
+  @apply md:flex-col;
+}
+
+.skill-blocks {
+  @apply w-full h-full grid grid-cols-1 gap-4 flex-wrap;
+  @apply sm:w-[92%];
+  @apply md:w-full md:grid-cols-2;
+  @apply lg:gap-6;
+}
+
+.skill-block {
+  @apply relative w-full basis-full flex flex-wrap flex-row justify-center rounded-2xl border-[1px] border-[#808080] py-6;
+  @apply sm:basis-1/2;
+  @apply md:py-7;
+  @apply lg:py-8;
+}
+
+.skill-name {
+  @apply w-[80%] mx-auto inline-flex flex-row items-center;
+}
+
+.skill-name svg {
+  @apply text-3xl;
+  @apply md:text-3xl;
+  @apply lg:text-5xl;
+}
+
+.skill-name span {
+  @apply font-semibold ml-5 text-xl;
+  @apply md:ml-4 md:text-xl;
+  @apply lg:ml-7 lg:text-2xl;
+}
+
+.skill-block .skill-percentage {
+  @apply absolute top-2 right-2 border-[1px] border-[#808080] rounded-full px-2 font-semibold text-sm;
+  @apply md:text-xs;
+  @apply lg:text-sm;
+}
+
+.skill-block .skill-progressbar {
+  @apply absolute w-full bottom-0 flex flex-row justify-center;
+}
+
+.skill-block .skill-progressbar .progress {
+  @apply mx-auto h-[5px] w-[50%];
+  @apply md:w-[70%];
+}
+
+.experience-blocks {
+  @apply relative;
+}
+
+.experience-block {
+  @apply pl-0 py-3 flex flex-col flex-wrap w-full;
+  @apply sm:pl-10;
+}
+
+.experience-block:not(:last-child) {
+  @apply mb-4;
+  @apply sm:mb-7;
+}
+
+.experience .vertical-line {
+  @apply hidden absolute h-full w-[1px] bg-[#808080];
+  @apply sm:flex;
+}
+
+.experience-block .year-dot {
+  @apply hidden absolute top-2 -left-[45px] bg-[#808080] rounded-full h-3 w-3;
+  @apply sm:flex;
+}
+
+.experience-block .year {
+  @apply relative;
+}
+
+.experience-block .year span {
+  @apply border-[1px] border-[#808080] font-bold rounded-full px-4 py-2 text-xs;
+  @apply md:px-5 md:py-2 md:text-sm;
+}
+
+.experience-block .company {
+  @apply font-medium capitalize text-2xl my-7;
+  @apply md:text-3xl;
+}
+
+.experience-block .company small {
+  @apply uppercase leading-none flex w-full ml-0 mt-1 text-lg;
+  @apply md:ml-4 md:text-lg;
+}
+
+.experience-block .description {
+  @apply -mt-3 list-outside;
+}
+
+.experience-block .description li {
+  @apply relative ml-5 w-[calc(100%-40px)] text-base mb-2;
+  @apply md:text-lg md:w-[calc(100%-20px)];
+  line-height: 1.4;
+}
+
+.experience-block .description li:before {
+  content: '⭐';
+  @apply absolute -ml-5 top-[7px] text-[7px];
+}
+
+.experience {
+  @apply mb-0;
+}
+
+.experience-block.last-block .description {
+  @apply mb-0 !important;
+  @apply sm:mb-5 !important;
+  @apply md:mb-10 !important;
+}

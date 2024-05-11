@@ -1,0 +1,46 @@
+.navbar-logo:hover,
+.nav-mid-links a:hover {
+  @apply text-gray-400;
+}
+
+.nav-mid-links a:hover {
+  @apply text-[#49564b];
+}
+
+.download-resume {
+  @apply bg-[var(--black-color)] hover:bg-[var(--black-color-hover)]  text-[#f8edc8] hover:text-[#f8edc8] rounded-full py-1 px-6 flex justify-center items-center;
+}
+
+.download-resume svg {
+  @apply ml-2;
+}
+
+.menu button {
+  @apply bg-transparent hover:bg-transparent border-0;
+}
+
+.menu li {
+  @apply mx-5 flex flex-wrap justify-center items-center;
+}
+
+.menu button {
+  @apply mb-0;
+}
+
+.menu a,
+.menu button {
+  @apply bg-transparent text-gray-600 sm:text-[17px] hover:bg-transparent leading-normal font-bold uppercase w-full flex items-center border-b-2 border-transparent rounded-none p-0 !important;
+}
+
+.menu a {
+  @apply aria-[current='page']:border-b-2 aria-[current='page']:border-gray-600 !important;
+}
+
+.menu.dropdown-content {
+  @apply bg-[var(--black-color)] drop-shadow-md;
+}
+
+.menu.dropdown-content a {
+  @apply aria-[current=page]:border-0 aria-[current=page]:text-[#f8edc8] !important;
+  @apply border-0 leading-7 !important;
+}
